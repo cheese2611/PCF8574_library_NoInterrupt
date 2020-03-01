@@ -186,7 +186,7 @@ void PCF8574::begin(){
 	if (_usingInterrupt){
 		DEBUG_PRINTLN("Using interrupt pin (not all pin is interrupted)");
 		::pinMode(_interruptPin, INPUT_PULLUP);
-		attachInterrupt(digitalPinToInterrupt(_interruptPin), (*_interruptFunction), FALLING );
+		//attachInterrupt(digitalPinToInterrupt(_interruptPin), (*_interruptFunction), FALLING );
 	}
 
 	// inizialize last read
